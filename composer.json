@@ -1,0 +1,34 @@
+{
+    "name": "tlamedia/grabzit-bundle",
+    "type": "symfony-bundle",
+    "description": "The GrabzitBundle integrates the GrabzIt PHP library with Symfony, allowing you to interact with the GrabzIt API in your Symfony projects.",
+    "keywords": ["grabzit", "bundle", "symfony"],
+    "homepage": "https://github.com/tlamedia",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Torben Lundsgaard",
+            "email": "kontakt@tlamedia.dk"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "grabzit/grabzit": "^3.3.0",
+        "symfony/config": "^3.4 || ^4.0",
+        "symfony/dependency-injection": "^3.4 || ^4.0",
+        "symfony/http-kernel": "^3.4 || ^4.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tla\\GrabzitBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tla\\GrabzitBundle\\Tests\\": "tests/"
+        }
+    }
+}
