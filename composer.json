@@ -2,7 +2,7 @@
     "name": "tlamedia/grabzit-bundle",
     "type": "symfony-bundle",
     "description": "The GrabzitBundle integrates the GrabzIt PHP library with Symfony, allowing you to interact with the GrabzIt API in your Symfony projects.",
-    "keywords": ["grabzit", "bundle", "symfony"],
+    "keywords": ["grabzit", "thumbnail" "bundle", "symfony"],
     "homepage": "https://github.com/tlamedia",
     "license": "MIT",
     "authors": [
