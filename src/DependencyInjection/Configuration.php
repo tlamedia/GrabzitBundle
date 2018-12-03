@@ -26,16 +26,21 @@ final class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('tla_grabzit');
-        
+        $treeBuilder = new TreeBuilder('tla_grabzit');
+
+	    if (method_exists($treeBuilder,'getRootNode')) {
+		    $rootNode = $treeBuilder->getRootNode();
+	    } else {
+		    $rootNode = $treeBuilder->root('tla_grabzit');
+	    }
+
         $rootNode
             ->children()
                 ->scalarNode('key')->defaultNull()->end()
                 ->scalarNode('secret')->defaultNull()->end()
             ->end()
         ;
-        
+
         return $treeBuilder;
     }
 }
