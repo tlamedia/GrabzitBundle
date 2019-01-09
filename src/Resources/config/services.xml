@@ -6,10 +6,12 @@
 
     <services>
         <service id="tla_grabzit.options" class="GrabzIt\GrabzItImageOptions"  public="true" />
+        <service id="GrabzIt\GrabzItImageOptions" alias="tla_grabzit.options" />
         <service id="tla_grabzit.client" class="GrabzIt\GrabzItClient" public="true">
             <argument></argument>
             <argument></argument>
         </service>
+        <service id="GrabzIt\GrabzItClient" alias="tla_grabzit.client" />
     </services>
 
 </container>
