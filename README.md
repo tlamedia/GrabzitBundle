@@ -39,7 +39,7 @@ tla_grabzit:
 
 ## Usage
 
-The bundle registers the services `tla_grabzit.options` and `tla_grabzit.client`, which allows you to use the GrabzIt API.
+The bundle registers the services `tla_grabzit.imageoptions`, `tla_grabzit.pdfoptions`, `tla_grabzit.docxoptions`, `tla_grabzit.animationoptions`, `tla_grabzit.tableoptions` and `tla_grabzit.client`, which allows you to use the GrabzIt API.
 
 
 ### Request a thumbnail from a service
@@ -63,7 +63,7 @@ class ThumbnailGenerator
     {
         $grabzItHandlerUrl = 'https://www.my-grabzit-thumbnail-site.com/api/thumbmail-ready';
 
-        $options = $this->container->get('tla_grabzit.options');
+        $options = $this->container->get('tla_grabzit.imageoptions');
         $options->setBrowserWidth(1024);
         $options->setBrowserHeight(768);
         $options->setFormat("png");

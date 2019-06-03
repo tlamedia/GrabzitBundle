@@ -23,6 +23,6 @@ class TlaGrabzitExtensionTest extends TestCase
         $extension = new TlaGrabzitExtension();
         $extension->load([], $container);
         $this->assertTrue($container->hasDefinition('tla_grabzit.client'));
-        $this->assertTrue($container->hasDefinition('tla_grabzit.options'));
+        $this->assertTrue($container->hasDefinition('tla_grabzit.imageoptions'));
     }
 }
