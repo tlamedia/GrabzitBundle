@@ -5,8 +5,16 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="tla_grabzit.options" class="GrabzIt\GrabzItImageOptions"  public="true" />
-        <service id="GrabzIt\GrabzItImageOptions" alias="tla_grabzit.options" />
+        <service id="tla_grabzit.imageoptions" class="GrabzIt\GrabzItImageOptions"  public="true" />
+        <service id="GrabzIt\GrabzItImageOptions" alias="tla_grabzit.imageoptions" />
+        <service id="tla_grabzit.pdfoptions" class="GrabzIt\GrabzItPDFOptions"  public="true" />
+        <service id="GrabzIt\GrabzItPDFOptions" alias="tla_grabzit.pdfoptions" />
+        <service id="tla_grabzit.docxoptions" class="GrabzIt\GrabzItDOCXOptions"  public="true" />
+        <service id="GrabzIt\GrabzItDOCXOptions" alias="tla_grabzit.docxoptions" />
+        <service id="tla_grabzit.animationoptions" class="GrabzIt\GrabzItAnimationOptions"  public="true" />
+        <service id="GrabzIt\GrabzItAnimationOptions" alias="tla_grabzit.animationoptions" />
+        <service id="tla_grabzit.tableoptions" class="GrabzIt\GrabzItTableOptions"  public="true" />
+        <service id="GrabzIt\GrabzItTableOptions" alias="tla_grabzit.tableoptions" />
         <service id="tla_grabzit.client" class="GrabzIt\GrabzItClient" public="true">
             <argument></argument>
             <argument></argument>
