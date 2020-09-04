@@ -16,12 +16,12 @@ Get the bundlle:
 Then enable it in your kernel:
 
 ```php
-public function registerBundles()
-{
-$bundles = array(
-//...
-new Tla\GrabzitBundle\TlaGrabzitBundle(),
-//...
+// config/bundles.php
+return [
+    //...
+    Tla\GrabzitBundle\TlaGrabzitBundle::class => ['all' => true],
+    //...
+];
 ```
 
 
